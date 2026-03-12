@@ -38,7 +38,7 @@ function GaugeRing({ value, max = 100, color, size = 80 }: { value: number; max?
         strokeLinecap="round" strokeDasharray={circ}
         initial={{ strokeDashoffset: circ }}
         animate={{ strokeDashoffset: offset }}
-        transition={{ type: "spring", duration: 1.2, bounce: 0.1 }}
+        transition={{ type: "spring" as const, duration: 1.2, bounce: 0.1 }}
         style={{ filter: `drop-shadow(0 0 6px ${color})` }}
       />
     </svg>

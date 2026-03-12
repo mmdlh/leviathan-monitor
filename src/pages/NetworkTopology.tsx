@@ -103,7 +103,7 @@ export default function NetworkTopology() {
                 key={n.id}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.05, type: "spring", duration: 0.5 }}
+                transition={{ delay: i * 0.05, type: "spring" as const, duration: 0.5 }}
                 className="cursor-pointer"
               >
                 {/* Glow */}

@@ -30,7 +30,7 @@ function Toggle({ enabled, label, desc }: { enabled: boolean; label: string; des
         <motion.div
           className="absolute top-1 left-1 w-4 h-4 rounded-full bg-foreground"
           animate={{ x: on ? 20 : 0 }}
-          transition={{ type: "spring", duration: 0.3, bounce: 0.2 }}
+          transition={{ type: "spring" as const, duration: 0.3, bounce: 0.2 }}
         />
       </button>
     </div>

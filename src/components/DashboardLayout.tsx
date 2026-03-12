@@ -68,7 +68,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                         background: "hsla(200, 100%, 50%, 0.08)",
                         boxShadow: "inset 0 0 0 1px hsla(200, 100%, 50%, 0.15), 0 0 20px hsla(200, 100%, 50%, 0.05)",
                       }}
-                      transition={{ type: "spring", duration: 0.5, bounce: 0.15 }}
+                      transition={{ type: "spring" as const, duration: 0.5, bounce: 0.15 }}
                     />
                   )}
                   {isActive && (

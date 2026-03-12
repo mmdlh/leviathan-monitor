@@ -8,7 +8,7 @@ const container = {
 };
 const item = {
   hidden: { opacity: 0, y: 10 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", duration: 0.5, bounce: 0.1 } },
+  show: { opacity: 1, y: 0, transition: { type: "spring" as const, duration: 0.5, bounce: 0.1 } },
 };
 
 const devices = Array.from({ length: 20 }, (_, i) => ({

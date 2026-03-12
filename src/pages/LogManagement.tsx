@@ -3,7 +3,7 @@ import { Search, Filter, ChevronDown, Download, Clock, AlertTriangle, Info, Bug,
 import { useState } from "react";
 
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.04 } } };
-const item = { hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0, transition: { type: "spring", duration: 0.5, bounce: 0.1 } } };
+const item = { hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0, transition: { type: "spring" as const, duration: 0.5, bounce: 0.1 } } };
 
 const logLevels: Record<string, { icon: any; color: string; bg: string }> = {
   ERROR: { icon: AlertTriangle, color: "text-destructive", bg: "bg-destructive/10" },

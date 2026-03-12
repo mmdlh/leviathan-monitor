@@ -6,7 +6,7 @@ import {
 import { useState, useEffect } from "react";
 
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.08 } } };
-const item = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", duration: 0.6, bounce: 0.1 } } };
+const item = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring" as const, duration: 0.6, bounce: 0.1 } } };
 
 function generateTimeSeries(points: number, base: number, variance: number) {
   return Array.from({ length: points }, (_, i) => ({

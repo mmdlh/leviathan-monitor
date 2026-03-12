@@ -76,7 +76,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                       layoutId="sidebar-indicator"
                       className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-6 rounded-r-full bg-primary"
                       style={{ boxShadow: "0 0 8px hsla(200, 100%, 50%, 0.6)" }}
-                      transition={{ type: "spring", duration: 0.5, bounce: 0.15 }}
+                      transition={{ type: "spring" as const, duration: 0.5, bounce: 0.15 }}
                     />
                   )}
                   <Icon className="relative z-10 h-[18px] w-[18px]" />

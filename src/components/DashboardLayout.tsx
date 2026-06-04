@@ -28,9 +28,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-background bg-grid">
-      {/* Sidebar */}
-      <aside className="relative z-10 flex w-[260px] flex-shrink-0 flex-col border-r border-border bg-sidebar">
+    <>
+      <div className="app-bg" aria-hidden />
+      <div className="flex h-screen w-full overflow-hidden">
+        {/* Sidebar */}
+        <aside className="glass-panel relative z-10 flex w-[260px] flex-shrink-0 flex-col">
         {/* Logo / Title */}
         <div className="flex h-20 items-center gap-3 px-6">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">

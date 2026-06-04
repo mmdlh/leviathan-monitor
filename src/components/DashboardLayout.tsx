@@ -30,8 +30,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <>
-      <div className="app-bg" aria-hidden />
-      <div className="flex h-screen w-full overflow-hidden">
+      <div
+        className="app-bg"
+        aria-hidden
+        style={{
+          backgroundImage: `radial-gradient(ellipse at top, hsla(200, 100%, 30%, 0.35), transparent 60%), radial-gradient(ellipse at bottom right, hsla(180, 80%, 40%, 0.22), transparent 55%), linear-gradient(180deg, hsla(220, 50%, 4%, 0.78), hsla(220, 60%, 6%, 0.92)), url(${techBg})`,
+        }}
+      />
+      <div className="relative flex h-screen w-full overflow-hidden">
         {/* Sidebar */}
         <aside className="glass-panel relative z-10 flex w-[260px] flex-shrink-0 flex-col">
         {/* Logo / Title */}

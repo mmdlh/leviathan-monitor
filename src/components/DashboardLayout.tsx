@@ -11,6 +11,7 @@ import {
   FileText,
   Settings,
 } from "lucide-react";
+import techBg from "@/assets/tech-bg.jpg";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "运行总览", path: "/" },

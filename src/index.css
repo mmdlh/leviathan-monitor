@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tech background layer */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(ellipse at top, hsla(200, 100%, 30%, 0.25), transparent 60%),
+    radial-gradient(ellipse at bottom right, hsla(180, 80%, 40%, 0.18), transparent 55%),
+    linear-gradient(180deg, hsla(220, 50%, 4%, 0.85), hsla(220, 50%, 6%, 0.95)),
+    url('/src/assets/tech-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.app-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(hsla(190, 100%, 60%, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(190, 100%, 60%, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
 @layer base {
   :root {
     --background: 220 40% 8%;
